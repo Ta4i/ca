@@ -1,7 +1,14 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+var express = require('express');
+var app = express();
+var ca = require('./app/ca');
 
 
+var messages = new (require('./app/messages'))();
+
+var router = new (require('./app/router'))({
+    app : app,
+    messages: messages
+});
+
+
+var server = app.listen(5178);

@@ -16,12 +16,9 @@
     "url": "https://github.com/Ta4i/ca/issues"
   },
   "homepage": "https://github.com/Ta4i/ca",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-bower-concat": "^0.4.0",
-    "grunt-bower-task": "^0.4.0",
-    "grunt-contrib-uglify": "^0.6.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-sass": "^0.15.0"
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.9.7",
+    "ws": "^0.4.32"
   }
 }

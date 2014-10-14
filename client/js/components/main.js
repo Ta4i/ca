@@ -1,0 +1,1 @@
+window.ca = window.ca || {};
