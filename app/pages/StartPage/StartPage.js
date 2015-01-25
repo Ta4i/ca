@@ -6,7 +6,7 @@ var MainPage = function(options){
         delete options[name];
     }
     
-    this.app.get('/', this.init);
+    this.app.get('/', t
 };
 MainPage.prototype.init = function (req, res) {
     console.log('dirname' + __dirname + '/template.html');
