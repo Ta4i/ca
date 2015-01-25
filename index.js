@@ -1,5 +1,12 @@
 var express = require('express');
 var app = express();
+var hbs = require('hbs');
+
+app.engine('html', hbs.__express);
+app.set('views', [
+    './app/pages/StartPage/template.html'
+]);
+app.set('view engine', 'html');
 
 var StartPage = require('./app/pages/StartPage');
 

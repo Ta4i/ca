@@ -19,6 +19,6 @@
   "devDependencies": {},
   "dependencies": {
     "express": "^4.11.1",
-    "handlebars": "^2.0.0"
+    "hbs": "^2.8.0"
   }
 }

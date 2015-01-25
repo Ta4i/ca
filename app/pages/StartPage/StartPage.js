@@ -1,12 +1,15 @@
+var path = require('path');
+
 var MainPage = function(options){
     for(var name in options){
         this[name] = options[name];
         delete options[name];
     }
+    
     this.app.get('/', this.init);
 };
 MainPage.prototype.init = function (req, res) {
-    res.send('Hello World!');
+    console.log('dirname' + __dirname + '/template.html');
 };
 
 module.exports = MainPage;
