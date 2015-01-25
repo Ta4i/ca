@@ -18,7 +18,5 @@
   "homepage": "https://github.com/Ta4i/ca",
   "devDependencies": {},
   "dependencies": {
-    "express": "^4.9.7",
-    "ws": "^0.4.32"
   }
 }
