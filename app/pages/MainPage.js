@@ -9,4 +9,4 @@ MainPage.prototype.init = function (req, res) {
     res.send('Hello World!');
 };
 
-module.exports = MainPage;
+module.exports = Main
