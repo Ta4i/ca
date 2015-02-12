@@ -3,10 +3,11 @@ var app = express();
 var hbs = require('hbs');
 
 app.engine('html', hbs.__express);
-app.set('views', [
-    './app/pages/StartPage/template.html'
-]);
+app.set('views', './app/pages');
 app.set('view engine', 'html');
+app.set("view options", { layout: false });
+
+app.use(express.static('client'));
 
 var StartPage = require('./app/pages/StartPage');
 
